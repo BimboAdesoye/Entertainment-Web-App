@@ -37,7 +37,6 @@ const Trending = () => {
                 backgroundImage: `url(${thumbnail.trending[imageSize]})`,
               }}
             >
-              {/* <img src={thumbnail.trending.small} alt="" /> */}
               <p>{title}</p>
               <p>{category}</p>
               <p>{year}</p>
