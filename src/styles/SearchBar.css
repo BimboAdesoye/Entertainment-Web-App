@@ -1,0 +1,26 @@
+.searchbar {
+  margin-top: 65px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.searchbar form input {
+  
+}
+
+@media screen and (max-width: 768px) {
+  .searchbar {
+    margin-block: 33px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .searchbar img {
+    width: 24px;
+  }
+
+  .searchbar {
+    gap: 16px;
+  }
+}

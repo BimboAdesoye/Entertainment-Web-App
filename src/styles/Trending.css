@@ -1,0 +1,20 @@
+.trending {
+  margin-block: 35px;
+  overflow-x: auto;
+}
+
+.trending .trending-movies {
+  margin-top: 25px;
+  gap: 40px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.trending .trending-movies::-webkit-scrollbar {
+  display: none;
+}
+
+.trending .trending-movies .trending-movie {
+ background-color: var(--Red);
+  /* width: 470px; */
+}
