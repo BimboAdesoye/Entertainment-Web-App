@@ -3,7 +3,6 @@ import "../styles/Trending.css";
 import moviesData from "../data.json";
 
 const trendingMovies = moviesData.filter((movie) => movie.isTrending);
-console.log(trendingMovies);
 
 const Trending = () => {
   const windowWidth = window.innerWidth;
@@ -25,8 +24,8 @@ const Trending = () => {
 
   return (
     <div className="trending">
-      <div className="heading-large">Trending</div>
-      <div className="d-flex trending-movies">
+      <p className="heading-large border-danger border">Trending</p>
+      <div className="trending-movies">
         {trendingMovies.map((trendingMovie) => {
           const { title, year, category, rating, thumbnail } = trendingMovie;
           return (

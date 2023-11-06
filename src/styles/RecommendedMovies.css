@@ -1,0 +1,16 @@
+.recommended-movies {
+  margin-top: 32px;
+  display: grid;
+  --width: 280px;
+  grid-template-columns: repeat(4, var(--width));
+  gap: 40px;
+}
+
+.recommended-movie {
+  height: 226px;
+  width: 280px;
+}
+
+.recommended-movie img {
+border-radius: 8px;
+}

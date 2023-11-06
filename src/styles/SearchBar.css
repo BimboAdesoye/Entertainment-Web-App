@@ -5,9 +5,6 @@
   gap: 24px;
 }
 
-.searchbar form input {
-  
-}
 
 @media screen and (max-width: 768px) {
   .searchbar {

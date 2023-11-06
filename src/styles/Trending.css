@@ -1,12 +1,16 @@
 .trending {
   margin-block: 35px;
-  overflow-x: auto;
+  max-width: 100%;
 }
 
 .trending .trending-movies {
   margin-top: 25px;
   gap: 40px;
-  width: 100%;
+  display: flex;
+  max-width: 100%;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  flex: 1;
   overflow-x: auto;
 }
 
@@ -15,6 +19,11 @@
 }
 
 .trending .trending-movies .trending-movie {
- background-color: var(--Red);
-  /* width: 470px; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  height: 230px;
+  width: clamp(240px, 50vw, 470px);
+  padding: 1.5rem;
 }
