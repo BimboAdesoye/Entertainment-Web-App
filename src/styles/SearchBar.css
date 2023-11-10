@@ -13,6 +13,9 @@
 }
 
 @media screen and (max-width: 425px) {
+  .searchbar {
+    margin-block: 26px;
+  }
   .searchbar img {
     width: 24px;
   }

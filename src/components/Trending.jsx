@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import "../styles/Trending.css";
 import moviesData from "../data.json";
 
@@ -36,10 +36,14 @@ const Trending = () => {
                 backgroundImage: `url(${thumbnail.trending[imageSize]})`,
               }}
             >
-              <p>{title}</p>
-              <p>{category}</p>
-              <p>{year}</p>
-              <p>{rating}</p>
+              <div className="dropdown">
+                <div className="properties">
+                  <p className="body-medium">{category}</p>
+                  <p className="body-medium">{year}</p>
+                  <p className="body-medium">{rating}</p>
+                </div>
+                <p className="heading-small">{title}</p>
+              </div>
             </div>
           );
         })}

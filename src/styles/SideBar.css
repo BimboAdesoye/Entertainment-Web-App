@@ -1,14 +1,13 @@
 .sidebar {
   margin: 32px;
   width: 96px;
-  height: 100vh;
+  height: 960px;
   border-radius: 20px;
   background-color: var(--Semi-Dark-Blue);
   padding-block: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* position: fixed; */
 }
 
 .sidebar .logo img {
@@ -34,7 +33,7 @@
   width: 20px;
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 768px) {
   .sidebar {
     flex-direction: row;
     width: 100%;

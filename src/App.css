@@ -22,8 +22,12 @@
 
 @media screen and (max-width: 425px) {
   :root {
-    --fs-heading-md: 16px;
     --fs-heading-large: 20px;
+    --fs-heading-md: 16px;
+    --heading-small: 15px;
+    --fs-heading-xs: 14px;
+    --fs-body-md: 12px;
+    --fs-body-sm: 11px;
   }
 }
 
@@ -123,8 +127,24 @@ body {
   font-weight: var(--fw-semi-bold);
 }
 
+.ac-container {
+  padding-right: 2.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .cc-container {
+    padding-inline: 1.5625rem;
+  }
+}
+
+@media screen and (max-width: 425) {
+  .cc-container {
+    padding-inline: 1rem;
+  }
+}
+
 @media (min-width: 425px) and (max-width: 768px) {
-  .ac-container {
+  .cc-container {
     padding-inline: 1.5rem;
     padding-top: 1.5rem;
   }

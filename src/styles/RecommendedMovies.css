@@ -3,14 +3,60 @@
   display: grid;
   --width: 280px;
   grid-template-columns: repeat(4, var(--width));
+  /* grid-template-columns: repeat(4, 1fr); */
   gap: 40px;
 }
 
 .recommended-movie {
   height: 226px;
-  width: 280px;
+  /* width: 280px; */
+}
+
+.recommended-movie .thumbnail {
+  position: relative;
+}
+
+.recommended-movie .thumbnail .bookmark {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--Semi-Dark-Blue);
 }
 
 .recommended-movie img {
-border-radius: 8px;
+  border-radius: 8px;
 }
+
+.recommended-movie .properties {
+  display: flex;
+  gap: 19px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+
+/* @media screen and (max-width: 768px) {
+  .recommended-movies {
+    --width: 220px;
+    grid-template-columns: repeat(3, var(--width));
+    gap: 24px;
+  }
+
+  .recommended-movie {
+    height: 192px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .recommended-movies {
+    --width: 164px;
+    grid-template-columns: repeat(2, var(--width));
+    gap: 16px;
+  }
+
+  .recommended-movie {
+    height: 154px;
+  }
+} */

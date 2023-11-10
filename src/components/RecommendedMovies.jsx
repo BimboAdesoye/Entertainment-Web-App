@@ -2,8 +2,6 @@ import "../styles/RecommendedMovies.css";
 import moviesData from "../data.json";
 
 const recommendedMovies = moviesData.filter((movie) => !movie.isTrending);
-console.log(recommendedMovies);
-
 
 const RecommendedMovies = () => {
   const windowWidth = window.innerWidth;
@@ -23,17 +21,23 @@ const RecommendedMovies = () => {
     imageSize = "large";
   }
   return (
-    <div className="recommended">
+    <div className="recommended ac-container">
       <h1 className="heading-large">Recommended for you</h1>
       <div className="recommended-movies">
         {recommendedMovies.map((movie) => {
           const { title, rating, year, category, thumbnail } = movie;
           return (
             <div className="recommended-movie" key={title}>
-              <img src={thumbnail.regular[imageSize]} alt="" />
-              <p>{rating}</p>
-              <p>{year}</p>
-              <p>{category}</p>
+              <div className="thumbnail">
+                <img src={thumbnail.regular[imageSize]} alt="" />
+                <div className="bookmark"></div>
+              </div>
+              <div className="properties">
+                <span className="body-small">{year}</span>
+                <span className="body-small">{rating}</span>
+                <span className="body-small">{category}</span>
+              </div>
+              <p className="heading-extra-small">{title}</p>
             </div>
           );
         })}

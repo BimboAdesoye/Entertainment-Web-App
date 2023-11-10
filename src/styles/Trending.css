@@ -26,4 +26,21 @@
   height: 230px;
   width: clamp(240px, 50vw, 470px);
   padding: 1.5rem;
+  /* opacity: 50%; */
+}
+
+.trending-movies .trending-movie .properties {
+  display: flex;
+  gap: 22px;
+}
+
+.trending-movies .trending-movie .dropdown {
+  margin-top: auto;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 425px) {
+  .trending .trending-movies .trending-movie {
+    height: 140px;
+  }
 }
